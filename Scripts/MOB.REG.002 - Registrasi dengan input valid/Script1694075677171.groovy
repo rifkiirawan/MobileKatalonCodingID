@@ -19,11 +19,32 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('D:\\Users\\bsi80194\\Downloads\\DemoAppV2.apk', true)
 
-Mobile.tap(findTestObject('Object Repository/btn_Login Here'), 0)
+Mobile.tap(findTestObject('btn_Login Here'), 0)
 
-Mobile.tap(findTestObject('Object Repository/btn_Register, now'), 0)
+Mobile.tap(findTestObject('btn_Register, now'), 0)
 
-Mobile.getText(findTestObject('Object Repository/android.view.View - New Account'), 0)
+Mobile.setText(findTestObject('Object Repository/form_Name'), 'John Doe', 0)
+
+Mobile.tap(findTestObject('Object Repository/btn_Calendar'), 0)
+
+Mobile.tap(findTestObject('Object Repository/btn_CalendarDate'), 0)
+
+Mobile.tap(findTestObject('Object Repository/btn_CalendarOK'), 0)
+
+Mobile.setText(findTestObject('Object Repository/form_Email'), 'abc@gm.com', 0)
+
+Mobile.setText(findTestObject('Object Repository/form_Phone'), '088811112222', 0)
+
+Mobile.setText(findTestObject('Object Repository/form_Password'), 'P@ssw0rd', 0)
+
+Mobile.setText(findTestObject('Object Repository/form_ConfirmPassword'), 'P@ssw0rd', 0)
+
+Mobile.tap(findTestObject('Object Repository/form_CheckboxSyaratKetentuan'), 0)
+
+Mobile.tap(findTestObject('Object Repository/btn_Daftar'), 0)
+
+Mobile.verifyElementText(findTestObject('txt_We have sended link of verification to your email'), 
+    'We have sended link of verification to your email')
 
 Mobile.closeApplication()
 
