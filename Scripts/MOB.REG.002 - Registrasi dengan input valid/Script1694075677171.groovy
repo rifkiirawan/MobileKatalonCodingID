@@ -21,7 +21,7 @@ Mobile.startApplication('D:\\Users\\bsi80194\\Downloads\\DemoAppV2.apk', true)
 
 Mobile.tap(findTestObject('btn_Login Here'), 0)
 
-Mobile.tap(findTestObject('btn_Register, now'), 0)
+Mobile.tap(findTestObject('btn_Register'), 0)
 
 Mobile.setText(findTestObject('Object Repository/form_Name'), 'John Doe', 0)
 

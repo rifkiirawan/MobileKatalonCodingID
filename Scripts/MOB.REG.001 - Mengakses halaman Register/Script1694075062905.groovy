@@ -21,9 +21,9 @@ Mobile.startApplication('D:\\Users\\bsi80194\\Downloads\\DemoAppV2.apk', true)
 
 Mobile.tap(findTestObject('Object Repository/btn_Login Here'), 0)
 
-Mobile.tap(findTestObject('Object Repository/btn_Register, now'), 0)
+Mobile.tap(findTestObject('Object Repository/btn_Register'), 0)
 
-Mobile.getText(findTestObject('Object Repository/android.view.View - New Account'), 0)
+Mobile.getText(findTestObject('Object Repository/txt_New Account'), 0)
 
 Mobile.closeApplication()
 
