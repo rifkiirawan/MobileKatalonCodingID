@@ -43,8 +43,7 @@ Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/form_CheckboxS
 
 Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/btn_Daftar'), 0)
 
-Mobile.verifyElementText(findTestObject('txt_We have sended link of verification to your email'), 
-    'We have sended link of verification to your email')
+Mobile.verifyElementText(findTestObject('txt_We have sended link of verification to your email'), 'We have sended link of verification to your email')
 
 Mobile.closeApplication()
 
