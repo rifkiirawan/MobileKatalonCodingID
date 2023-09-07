@@ -31,19 +31,9 @@ Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/btn_CalendarDa
 
 Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/btn_CalendarOK'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Mobile_Register Page/form_Email'), 'abc@gm.com', 0)
+Mobile.setText(findTestObject('Object Repository/Mobile_Register Page/form_Email'), 'abc', 0)
 
-Mobile.setText(findTestObject('Object Repository/Mobile_Register Page/form_Phone'), '088811112222', 0)
-
-Mobile.setText(findTestObject('Object Repository/Mobile_Register Page/form_Password'), 'P@ssw0rd', 0)
-
-Mobile.setText(findTestObject('Object Repository/Mobile_Register Page/form_ConfirmPassword'), 'P@ssw0rd', 0)
-
-Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/form_CheckboxSyaratKetentuan'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/btn_Daftar'), 0)
-
-Mobile.verifyElementText(findTestObject('txt_We have sended link of verification to your email'), 'We have sended link of verification to your email')
+Mobile.verifyElementText(findTestObject('Mobile_Register Page/alert_Format email is not valid'), 'Format email is not valid')
 
 Mobile.closeApplication()
 
