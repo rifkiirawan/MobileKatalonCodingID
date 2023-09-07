@@ -23,11 +23,7 @@ Mobile.tap(findTestObject('btn_Login Here'), 0)
 
 Mobile.tap(findTestObject('btn_Register'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/btn_Calendar'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/btn_CalendarDate'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Mobile_Register Page/btn_CalendarOK'), 0)
+Mobile.setText(findTestObject('Object Repository/Mobile_Register Page/form_Name'), 'John Doe', 0)
 
 Mobile.setText(findTestObject('Object Repository/Mobile_Register Page/form_Email'), 'abc@gm.com', 0)
 
